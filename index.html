@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eli Ward — Music & Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ew.png" alt="Eli Ward" class="logo-img" width="120" height="48" />
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <img src="images/logo-eli-ward.png" alt="Eli Ward" class="hero-signature" width="320" height="120" />
+        <p class="hero-tagline">Music & Production</p>
+        <h1 class="hero-title" aria-hidden="true"></h1>
+        <p class="hero-sub">Songs, beats, and professional production.</p>
+        <div class="hero-cta">
+          <a href="music.html" class="btn btn-primary">Listen</a>
+          <a href="contact.html" class="btn btn-secondary">Get a quote</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <section class="section section-bio" id="bio">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="bio-grid">
+          <div class="bio-content">
+            <p class="lead">Eli Ward is a musician and producer.</p>
+            <p>Your story, your sound. This space is for a short bio: where you’re from, what you do, and what you offer—music, production, and creative collaboration.</p>
+            <p>You can add more paragraphs here: influences, credits, or how you work with artists. A few lines about your process or what makes your sound distinct will give visitors a clear picture.</p>
+            <p>Links to press, playlists, or featured work can live in this section or in the Music page.</p>
+          </div>
+          <div class="bio-image">
+            <div class="bio-image-placeholder" aria-hidden="true">
+              <span>Photo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-music" id="music">
+      <div class="container">
+        <h2 class="section-title">Music</h2>
+        <p class="section-intro">Releases and selected tracks. Embed from Spotify, SoundCloud, or Bandcamp, or link out to your full catalog.</p>
+        <div class="music-grid">
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 1</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 2</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 3</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 4</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+        </div>
+        <p class="pricing-cta">
+          <a href="music.html" class="btn btn-secondary">See all music</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Production</h2>
+        <p class="section-intro">Rates and packages for mixing, mastering, and full production. Custom quotes available for projects.</p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Mixing</h3>
+            <p class="pricing-desc">Full mix per song. Stems or tracks delivered. Revisions included.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Popular</span>
+            <h3>Production</h3>
+            <p class="pricing-desc">Beat, arrangement, and full production. From idea to finished track.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Mastering</h3>
+            <p class="pricing-desc">Stereo master, ready for distribution. Reference and revisions.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+        </div>
+        <p class="pricing-cta">
+          <a href="contact.html" class="btn btn-primary">Request a quote</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eli Ward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

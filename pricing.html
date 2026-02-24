@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Eli Ward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ew.png" alt="Eli Ward" class="logo-img" width="120" height="48" />
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section section-pricing">
+      <div class="container">
+        <header class="page-header">
+          <h1 class="section-title">Production pricing</h1>
+          <p class="section-intro">Rates and packages for mixing, mastering, and full production. Custom quotes for larger projects or bundles.</p>
+        </header>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Mixing</h3>
+            <p class="pricing-desc">Full mix per song. Stems or tracks delivered. Up to two rounds of revisions included.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Popular</span>
+            <h3>Production</h3>
+            <p class="pricing-desc">Beat, arrangement, and full production. From idea to finished track. Includes stems and session file.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Mastering</h3>
+            <p class="pricing-desc">Stereo master, ready for distribution. Reference track and one revision round included.</p>
+            <p class="pricing-price">—</p>
+            <p class="pricing-note">Price on request</p>
+          </div>
+        </div>
+        <p class="pricing-cta">
+          <a href="contact.html" class="btn btn-primary">Request a quote</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eli Ward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

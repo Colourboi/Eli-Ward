@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music — Eli Ward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ew.png" alt="Eli Ward" class="logo-img" width="120" height="48" />
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section section-music">
+      <div class="container">
+        <header class="page-header">
+          <h1 class="section-title">Music</h1>
+          <p class="section-intro">Releases and selected tracks. Embed from Spotify, SoundCloud, or Bandcamp below, or link to your full catalog.</p>
+        </header>
+        <div class="music-grid">
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 1</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 2</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 3</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 4</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 5</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 6</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eli Ward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Eli Ward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ew.png" alt="Eli Ward" class="logo-img" width="120" height="48" />
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section section-contact">
+      <div class="container">
+        <header class="page-header">
+          <h1 class="section-title">Contact</h1>
+          <p class="section-intro">Book a session, ask about pricing, or say hi. Send a message below or reach out directly.</p>
+        </header>
+        <div class="contact-form-wrap">
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+        <div class="contact-direct">
+          <p>Or get in touch directly:</p>
+          <div class="contact-links">
+            <a href="mailto:hello@eliward.com">hello@eliward.com</a>
+            <a href="#" rel="noopener">Instagram</a>
+            <a href="#" rel="noopener">Spotify</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eli Ward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
