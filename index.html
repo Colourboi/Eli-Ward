@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eli Ward — Music & Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <a class="logo" onclick="toggleWizard()">
+        <img src="images/logo-ew.png" alt="Eli Ward" class="logo-img" width="120" height="48" />
+      </a>
+      <div class="header-socials">
+        <a href="https://open.spotify.com/artist/0erJlFRhCVjYRHm5Zv5o2l" aria-label="Spotify" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+        <a href="https://music.apple.com/us/artist/eli-ward/1668022790" aria-label="Apple Music" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726a10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@Eli.Ward02" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/eli.ward02/" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@eli_ward02" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.83 1.56V6.79a4.85 4.85 0 01-1.06-.1z"/></svg>
+        </a>
+      </div>
+    </div>
+    <span class="wizard-egg" id="wizardEgg" aria-hidden="true">🧙‍♂️</span>
+    <span class="wizard-bubble" id="wizardBubble" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <img src="images/logo-eli-ward.png" alt="Eli Ward" class="hero-signature" width="320" height="120" />
+        <p class="hero-tagline">Music & Production</p>
+        <h1 class="hero-title" aria-hidden="true"></h1>
+        <p class="hero-sub">Songs, beats, and professional production.</p>
+        <div class="hero-cta">
+          <a href="music.html" class="btn btn-primary">Listen</a>
+          <a href="contact.html" class="btn btn-secondary">Get a quote</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <section class="section section-bio" id="bio">
+      <div class="bio-pattern" aria-hidden="true">
+        <!-- EW logos — upright -->
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:4%;top:6%;width:54px;transform:rotate(-15deg);opacity:0.20">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:24%;top:2%;width:48px;transform:rotate(22deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:48%;top:5%;width:52px;transform:rotate(-5deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:72%;top:8%;width:50px;transform:rotate(30deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:88%;top:15%;width:48px;transform:rotate(-12deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:10%;top:22%;width:50px;transform:rotate(18deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:40%;top:15%;width:46px;transform:rotate(-22deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:66%;top:20%;width:52px;transform:rotate(15deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="right:3%;top:28%;width:46px;transform:rotate(-25deg);opacity:0.20">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:14%;top:45%;width:52px;transform:rotate(12deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:36%;top:40%;width:48px;transform:rotate(-30deg);opacity:0.16">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:60%;top:35%;width:54px;transform:rotate(8deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:82%;top:48%;width:50px;transform:rotate(-18deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:26%;top:58%;width:48px;transform:rotate(-8deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:50%;top:62%;width:52px;transform:rotate(25deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:74%;top:55%;width:46px;transform:rotate(-35deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:8%;bottom:8%;width:52px;transform:rotate(20deg);opacity:0.20">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:20%;bottom:18%;width:50px;transform:rotate(5deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:32%;bottom:4%;width:46px;transform:rotate(-10deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:44%;bottom:15%;width:48px;transform:rotate(-20deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:56%;bottom:10%;width:50px;transform:rotate(35deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:90%;bottom:12%;width:50px;transform:rotate(10deg);opacity:0.17">
+        <!-- EW logos — sideways/tilted -->
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:10%;top:10%;width:46px;transform:rotate(75deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="right:12%;top:5%;width:50px;transform:rotate(-80deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:2%;top:35%;width:48px;transform:rotate(95deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:58%;top:12%;width:50px;transform:rotate(-70deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:44%;top:28%;width:52px;transform:rotate(110deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:86%;top:35%;width:48px;transform:rotate(-95deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:8%;top:72%;width:52px;transform:rotate(85deg);opacity:0.19">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:32%;top:74%;width:48px;transform:rotate(-105deg);opacity:0.17">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:64%;bottom:20%;width:50px;transform:rotate(68deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="right:5%;bottom:20%;width:54px;transform:rotate(-88deg);opacity:0.20">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:76%;bottom:5%;width:48px;transform:rotate(115deg);opacity:0.18">
+        <img src="images/logo-ew.png" alt="" class="bp-item" style="left:80%;top:70%;width:52px;transform:rotate(-72deg);opacity:0.18">
+        <!-- Signatures (fewer) -->
+        <img src="images/logo-eli-ward.png" alt="" class="bp-item" style="left:1%;top:68%;width:112px;transform:rotate(-10deg);opacity:0.14">
+        <img src="images/logo-eli-ward.png" alt="" class="bp-item" style="left:30%;top:60%;width:96px;transform:rotate(14deg);opacity:0.13">
+        <img src="images/logo-eli-ward.png" alt="" class="bp-item" style="right:2%;top:55%;width:104px;transform:rotate(-12deg);opacity:0.14">
+        <img src="images/logo-eli-ward.png" alt="" class="bp-item" style="left:18%;top:12%;width:92px;transform:rotate(-8deg);opacity:0.13">
+        <img src="images/logo-eli-ward.png" alt="" class="bp-item" style="left:62%;bottom:3%;width:100px;transform:rotate(6deg);opacity:0.13">
+      </div>
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="bio-grid">
+          <div class="bio-content">
+            <p class="lead">Eli Ward is a musician and producer.</p>
+            <p>Your story, your sound. This space is for a short bio: where you’re from, what you do, and what you offer—music, production, and creative collaboration.</p>
+            <p>You can add more paragraphs here: influences, credits, or how you work with artists. A few lines about your process or what makes your sound distinct will give visitors a clear picture.</p>
+            <p>Links to press, playlists, or featured work can live in this section or in the Music page.</p>
+          </div>
+          <div class="bio-image">
+            <div class="bio-image-placeholder" aria-hidden="true">
+              <span>Photo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-video" id="video">
+      <div class="video-glow-wrap">
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/vUAMP4Zah9U"
+            title="Eli Ward — Latest Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-music" id="music">
+      <div class="container">
+        <h2 class="section-title">Music</h2>
+        <p class="section-intro">Releases and selected tracks. Embed from Spotify, SoundCloud, or Bandcamp, or link out to your full catalog.</p>
+        <div class="music-grid">
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 1</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 2</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 3</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+          <article class="music-card">
+            <div class="music-card-placeholder"><span>Track / Album 4</span></div>
+            <h3 class="music-card-title">Release title</h3>
+            <p class="music-card-meta">Year · Single / EP / Album</p>
+          </article>
+        </div>
+        <p class="pricing-cta">
+          <a href="music.html" class="btn btn-secondary">See all music</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="bio-pattern" aria-hidden="true">
+      <!-- Top row — 12 upright logos -->
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:1%;top:8%;width:40px;transform:rotate(-10deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:9%;top:12%;width:44px;transform:rotate(6deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:17%;top:8%;width:38px;transform:rotate(-4deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:25%;top:14%;width:42px;transform:rotate(12deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:33%;top:8%;width:44px;transform:rotate(-8deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:41%;top:12%;width:40px;transform:rotate(5deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:50%;top:8%;width:42px;transform:rotate(-12deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:58%;top:14%;width:38px;transform:rotate(8deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:66%;top:8%;width:44px;transform:rotate(-5deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:74%;top:12%;width:42px;transform:rotate(10deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:82%;top:8%;width:40px;transform:rotate(-8deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:90%;top:14%;width:44px;transform:rotate(6deg);opacity:0.18">
+      <!-- Bottom row — 12 upright logos, offset -->
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:5%;bottom:8%;width:42px;transform:rotate(8deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:13%;bottom:12%;width:40px;transform:rotate(-6deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:21%;bottom:8%;width:44px;transform:rotate(12deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:29%;bottom:14%;width:38px;transform:rotate(-10deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:37%;bottom:8%;width:42px;transform:rotate(4deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:45%;bottom:12%;width:44px;transform:rotate(-12deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:54%;bottom:8%;width:40px;transform:rotate(8deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:62%;bottom:14%;width:42px;transform:rotate(-5deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:70%;bottom:8%;width:38px;transform:rotate(10deg);opacity:0.18">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:78%;bottom:12%;width:44px;transform:rotate(-8deg);opacity:0.20">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:86%;bottom:8%;width:42px;transform:rotate(6deg);opacity:0.19">
+      <img src="images/logo-ew.png" alt="" class="bp-item" style="left:93%;bottom:14%;width:40px;transform:rotate(-4deg);opacity:0.18">
+    </div>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eli Ward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // states: 'off' | 'greeting' | 'flying' | 'returning'
+    var _wState = 'off';
+    var _wTimer = null;
+    function toggleWizard() {
+      var w = document.getElementById('wizardEgg');
+      var b = document.getElementById('wizardBubble');
+      // Only respond to clicks when idle (off or flying)
+      if (_wState === 'greeting' || _wState === 'returning') return;
+      if (_wTimer) { clearTimeout(_wTimer); _wTimer = null; }
+
+      if (_wState === 'off') {
+        // 1. Appear at origin
+        _wState = 'greeting';
+        w.classList.add('wiz-visible');
+        // 2. Show greeting bubble after fade-in
+        _wTimer = setTimeout(function() {
+          b.textContent = 'thanks for being here \u2665';
+          b.classList.add('visible');
+          // 3. Fade bubble out
+          _wTimer = setTimeout(function() {
+            b.classList.remove('visible');
+            // 4. Start flying after bubble fades
+            _wTimer = setTimeout(function() {
+              w.classList.remove('wiz-visible');
+              w.classList.add('wiz-flying');
+              _wState = 'flying';
+              _wTimer = null;
+            }, 400);
+          }, 2200);
+        }, 350);
+
+      } else if (_wState === 'flying') {
+        // 1. Stop flying, return to origin
+        _wState = 'returning';
+        w.classList.remove('wiz-flying');
+        w.classList.add('wiz-returning');
+        // 2. Wait for return transition, then show goodbye
+        _wTimer = setTimeout(function() {
+          var msgs = ['goodbye!', 'adios!', 'see you later!', 'love you!'];
+          b.textContent = msgs[Math.floor(Math.random() * msgs.length)];
+          b.classList.add('visible');
+          // 3. Fade bubble + wizard out together
+          _wTimer = setTimeout(function() {
+            b.classList.remove('visible');
+            w.classList.remove('wiz-returning');
+            _wState = 'off';
+            _wTimer = null;
+          }, 2200);
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+</html>
