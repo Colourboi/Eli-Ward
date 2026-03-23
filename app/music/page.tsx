@@ -3,134 +3,114 @@ import Link from "next/link";
 export default function MusicPage() {
   return (
     <main>
-      <section className="retro-panel">
-        <h1 className="retro-title">Music</h1>
+      <section className="section section-music">
+        <div className="container">
+          <header className="page-header">
+            <h1 className="section-title">Music</h1>
+            <p className="section-intro">Releases and selected tracks.</p>
+          </header>
 
-        <div className="grid gap-5">
-          <article className="retro-card retro-music-hero">
-            <h2 className="text-2xl font-semibold md:text-3xl">Eli Ward Artist Profiles</h2>
-            <p className="mt-2 text-sm text-zinc-300">Spotify and Apple Music all in one place.</p>
-
-            <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <div className="retro-embed-shell mb-4">
-                <iframe
-                  title="Eli Ward Spotify artist page"
-                  src="https://open.spotify.com/embed/artist/0erJlFRhCVjYRHm5Zv5o2l?utm_source=generator&theme=0"
-                  loading="lazy"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  className="retro-spotify-embed"
-                />
-              </div>
-
-              <div className="retro-embed-shell mb-4">
-                <iframe
-                  title="Eli Ward Apple Music artist page"
-                  src="https://embed.music.apple.com/us/artist/eli-ward/1668022790"
-                  loading="lazy"
-                  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-                  className="retro-spotify-embed"
-                />
-              </div>
-            </div>
-
-            <div className="mt-2 flex flex-wrap gap-2">
-              <a
-                className="retro-btn w-fit"
-                href="https://open.spotify.com/artist/0erJlFRhCVjYRHm5Zv5o2l"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Spotify
-              </a>
-              <a
-                className="retro-btn w-fit"
-                href="https://music.apple.com/us/artist/eli-ward/1668022790"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Apple Music
-              </a>
-            </div>
-          </article>
-
-          <article className="retro-card retro-music-card">
-            <div className="retro-embed-shell mb-4">
+          <div className="music-grid">
+            <article className="music-card">
               <iframe
-                title="Most recent release Spotify album"
+                title="Keep Yourself — Eli Ward"
                 src="https://open.spotify.com/embed/album/0l8hJze8hmbytFuiDCxYxp?utm_source=generator&theme=0"
                 loading="lazy"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                className="retro-spotify-embed"
+                className="music-card-embed"
+                style={{ height: 352 }}
               />
-            </div>
-            <h2 className="text-xl font-semibold">Most Recent Release</h2>
-            <p className="mt-2 text-sm text-zinc-300">Latest release from Eli Ward.</p>
-            <a
-              className="retro-btn mt-4 w-fit"
-              href="https://open.spotify.com/album/0l8hJze8hmbytFuiDCxYxp"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Spotify
-            </a>
-          </article>
+              <div className="music-card-body">
+                <h3 className="music-card-title">Keep Yourself</h3>
+                <p className="music-card-meta">2025 · EP</p>
+                <a className="btn btn-secondary" href="https://open.spotify.com/album/0l8hJze8hmbytFuiDCxYxp" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
+                  Open in Spotify
+                </a>
+              </div>
+            </article>
 
-          <article className="retro-card retro-music-card">
-            <div className="retro-embed-shell mb-4">
+            <article className="music-card">
               <iframe
-                title="New York City Trip YouTube video"
-                src="https://www.youtube.com/embed/vUAMP4Zah9U"
+                title="Eli Ward — Artist Profile"
+                src="https://open.spotify.com/embed/artist/0erJlFRhCVjYRHm5Zv5o2l?utm_source=generator&theme=0"
                 loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                className="retro-youtube-embed"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                className="music-card-embed"
+                style={{ height: 352 }}
               />
-            </div>
-            <h2 className="text-xl font-semibold">New York City Trip!</h2>
-            <p className="mt-2 text-sm text-zinc-300">Video highlight.</p>
-            <a
-              className="retro-btn mt-4 w-fit"
-              href="https://www.youtube.com/watch?v=vUAMP4Zah9U"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Watch on YouTube
-            </a>
-          </article>
+              <div className="music-card-body">
+                <h3 className="music-card-title">Artist Profile</h3>
+                <p className="music-card-meta">All releases · Spotify</p>
+                <a className="btn btn-secondary" href="https://open.spotify.com/artist/0erJlFRhCVjYRHm5Zv5o2l" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
+                  Open in Spotify
+                </a>
+              </div>
+            </article>
 
-          <article className="retro-card retro-music-card">
-            <div className="retro-embed-shell mb-4">
+            <article className="music-card">
               <iframe
-                title="My production Spotify playlist"
+                title="Eli Ward — Apple Music"
+                src="https://embed.music.apple.com/us/artist/eli-ward/1668022790"
+                loading="lazy"
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                className="music-card-embed"
+                style={{ height: 352 }}
+              />
+              <div className="music-card-body">
+                <h3 className="music-card-title">Apple Music</h3>
+                <p className="music-card-meta">All releases · Apple Music</p>
+                <a className="btn btn-secondary" href="https://music.apple.com/us/artist/eli-ward/1668022790" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
+                  Open in Apple Music
+                </a>
+              </div>
+            </article>
+
+            <article className="music-card">
+              <iframe
+                title="My Production — Spotify Playlist"
                 src="https://open.spotify.com/embed/playlist/5o88KhxRzrcZYJkQksAqVp?utm_source=generator&theme=0"
                 loading="lazy"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                className="retro-spotify-embed"
+                className="music-card-embed"
+                style={{ height: 352 }}
               />
-            </div>
-            <h2 className="text-xl font-semibold">My Production</h2>
-            <p className="mt-2 text-sm text-zinc-300">A taste of what I have worked on.</p>
-            <a
-              className="retro-btn mt-4 w-fit"
-              href="https://open.spotify.com/playlist/5o88KhxRzrcZYJkQksAqVp"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Spotify
-            </a>
-          </article>
-        </div>
-      </section>
+              <div className="music-card-body">
+                <h3 className="music-card-title">My Production</h3>
+                <p className="music-card-meta">Playlist · Production work</p>
+                <a className="btn btn-secondary" href="https://open.spotify.com/playlist/5o88KhxRzrcZYJkQksAqVp" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
+                  Open in Spotify
+                </a>
+              </div>
+            </article>
 
-      <section className="retro-panel mt-6">
-        <p className="text-xl font-semibold text-zinc-200">Are you looking for production?</p>
-        <p className="retro-copy mt-2">
-          Mixing, mastering, and full production — from sketch to release-ready. Reach out and let&apos;s talk about your project.
-        </p>
-        <div className="mt-5">
-          <Link href="/contact" className="retro-btn retro-btn-primary">
-            Get a quote
-          </Link>
+            <article className="music-card" style={{ gridColumn: "1 / -1" }}>
+              <div style={{ position: "relative", width: "100%", aspectRatio: "16/9" }}>
+                <iframe
+                  title="NYC '25 — Eli Ward"
+                  src="https://www.youtube.com/embed/vUAMP4Zah9U"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0, display: "block" }}
+                />
+              </div>
+              <div className="music-card-body">
+                <h3 className="music-card-title">NYC &apos;25 — Short Film</h3>
+                <p className="music-card-meta">2025 · Video</p>
+                <a className="btn btn-secondary" href="https://www.youtube.com/watch?v=vUAMP4Zah9U" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
+                  Watch on YouTube
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div className="section-cta" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "var(--space-md)", flexWrap: "wrap" }}>
+            <p style={{ color: "var(--color-text-muted)", margin: 0 }}>
+              Looking for production services?
+            </p>
+            <Link href="/contact" className="btn btn-primary" style={{ width: "auto" }}>Get a quote</Link>
+          </div>
         </div>
       </section>
     </main>
