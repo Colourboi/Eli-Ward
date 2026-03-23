@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="retro-panel mb-8">
+      <section className="retro-panel mb-2">
         <h2 className="retro-title">About</h2>
         <p className="retro-copy">
           Eli Ward is a Nashville-based singer-songwriter, producer, and session musician originally from Waterloo,
@@ -35,7 +36,7 @@ export default function Home() {
         <p className="retro-copy mt-4">
           Since launching with &quot;Catalyst&quot; in 2023, Ward has released a steady run of singles including
           &quot;Text When You Leave,&quot; &quot;Wildfire,&quot; &quot;FOMO,&quot; &quot;Relic,&quot;
-          &quot;Haunt,&quot; &quot;5 '/ 3 ONE,&quot; and &quot;rich when you're young.&quot; In November 2025, he
+          &quot;Haunt,&quot; &quot;5 '/ 3 ONE,&quot; and &quot;rich when you&apos;re young.&quot; In November 2025, he
           released his debut EP,{" "}
           <a
             href="https://open.spotify.com/album/0l8hJze8hmbytFuiDCxYxp"
@@ -45,9 +46,37 @@ export default function Home() {
           >
             Keep Yourself
           </a>
-          , a six-song project spanning singer-songwriter, folk, pop, and alternative textures. Alongside his own
-          artist releases, Ward continues to write and produce for collaborators in Nashville and beyond.
+          , a six-song project spanning singer-songwriter, folk, pop, and alternative textures.
         </p>
+      </section>
+
+      <section className="retro-card mb-2">
+        <div className="retro-embed-shell">
+          <iframe
+            src="https://www.youtube.com/embed/vUAMP4Zah9U"
+            title="Eli Ward — Latest Video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            className="retro-youtube-embed"
+          />
+        </div>
+      </section>
+
+      <section className="retro-panel">
+        <h2 className="retro-title">Music</h2>
+        <div className="retro-embed-shell mb-4">
+          <iframe
+            title="Keep Yourself — Eli Ward"
+            src="https://open.spotify.com/embed/album/0l8hJze8hmbytFuiDCxYxp?utm_source=generator&theme=0"
+            loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            className="retro-spotify-embed"
+          />
+        </div>
+        <Link href="/music" className="retro-btn">
+          See all music
+        </Link>
       </section>
     </main>
   );

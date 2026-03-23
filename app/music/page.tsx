@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function MusicPage() {
   return (
     <main>
@@ -29,7 +31,6 @@ export default function MusicPage() {
                   className="retro-spotify-embed"
                 />
               </div>
-
             </div>
 
             <div className="mt-2 flex flex-wrap gap-2">
@@ -118,6 +119,18 @@ export default function MusicPage() {
               Open in Spotify
             </a>
           </article>
+        </div>
+      </section>
+
+      <section className="retro-panel mt-6">
+        <p className="text-xl font-semibold text-zinc-200">Are you looking for production?</p>
+        <p className="retro-copy mt-2">
+          Mixing, mastering, and full production — from sketch to release-ready. Reach out and let&apos;s talk about your project.
+        </p>
+        <div className="mt-5">
+          <Link href="/contact" className="retro-btn retro-btn-primary">
+            Get a quote
+          </Link>
         </div>
       </section>
     </main>
