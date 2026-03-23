@@ -215,6 +215,95 @@ body {
   }
 }
 
+.retro-btn-active {
+  background: #1e1e1e;
+  border-color: #888;
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #020202,
+    0 0 0 1px #000,
+    0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+/* ── Wizard Easter Egg ─────────────────────────────────────────── */
+.wizard-egg {
+  position: absolute;
+  font-size: 26px;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 200;
+  line-height: 1;
+  user-select: none;
+  will-change: transform, opacity;
+  transform: translateX(22vw) translateY(32px) rotate(-8deg);
+  transition: opacity 0.3s ease, transform 1s ease;
+}
+
+.wizard-egg.wiz-visible,
+.wizard-egg.wiz-returning {
+  opacity: 1;
+}
+
+.wizard-egg.wiz-flying {
+  opacity: 1;
+  animation: wizard-fly 10s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes wizard-fly {
+  0%   { transform: translateX(22vw) translateY(32px) rotate(-8deg); }
+  8%   { transform: translateX(28vw) translateY(12px) rotate(-18deg); }
+  14%  { transform: translateX(34vw) translateY(5px)  rotate(-60deg); }
+  19%  { transform: translateX(41vw) translateY(22px) rotate(-140deg); }
+  24%  { transform: translateX(36vw) translateY(50px) rotate(-220deg); }
+  29%  { transform: translateX(32vw) translateY(10px) rotate(-360deg); }
+  38%  { transform: translateX(48vw) translateY(48px) rotate(-5deg); }
+  46%  { transform: translateX(60vw) translateY(14px) rotate(8deg); }
+  52%  { transform: translateX(65vw) translateY(5px)  rotate(65deg); }
+  57%  { transform: translateX(71vw) translateY(26px) rotate(148deg); }
+  62%  { transform: translateX(66vw) translateY(54px) rotate(222deg); }
+  67%  { transform: translateX(61vw) translateY(8px)  rotate(360deg); }
+  76%  { transform: translateX(48vw) translateY(46px) rotate(12deg); }
+  86%  { transform: translateX(34vw) translateY(14px) rotate(-10deg); }
+  94%  { transform: translateX(26vw) translateY(50px) rotate(5deg); }
+  100% { transform: translateX(22vw) translateY(32px) rotate(-8deg); }
+}
+
+.wizard-bubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(calc(22vw + 28px)) translateY(2px);
+  background: #fff;
+  color: #222;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 9px;
+  border-radius: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 202;
+  transition: opacity 0.35s ease;
+  line-height: 1.4;
+}
+
+.wizard-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+.wizard-bubble.visible {
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

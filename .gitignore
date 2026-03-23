@@ -2,3 +2,9 @@ node_modules/
 .next/
 out/
 .DS_Store
+.DS_Store?
+._*
+.vercel/
+.env
+.env.local
+.env*.local
