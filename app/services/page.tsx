@@ -3,60 +3,60 @@ import Link from "next/link";
 const packages = [
   {
     name: "Mixing",
-    desc: "Full mix per song. Stems or tracks delivered with revision rounds.",
+    desc: "Full mix per song. Stems or tracks delivered. Up to two rounds of revisions included.",
+    featured: false,
   },
   {
     name: "Production",
-    desc: "Beat, arrangement, and full production from sketch to release-ready final.",
+    desc: "Beat, arrangement, and full production. From idea to finished track. Includes stems and session file.",
+    featured: true,
   },
   {
     name: "Mastering",
-    desc: "Stereo mastering for distribution with reference matching.",
+    desc: "Stereo master, ready for distribution. Reference track and one revision round included.",
+    featured: false,
   },
 ];
 
 export default function ServicesPage() {
   return (
     <main>
-      <section className="retro-panel mb-6">
-        <h1 className="retro-title">Services</h1>
-        <p className="retro-copy mb-8">
-          Based in Nashville, Eli works with artists at every stage — from bedroom demos to label-ready releases.
-          Whether you need a beat, a full production, or a polished mix, the goal is always the same: a sound that
-          feels like you.
-        </p>
+      <section className="section section-pricing">
+        <div className="container">
+          <header className="page-header">
+            <h1 className="section-title">Production Pricing</h1>
+            <p className="section-intro">
+              Rates and packages for mixing, mastering, and full production. Custom quotes for larger projects or
+              bundles.
+            </p>
+          </header>
 
-        {/* Studio / proof-of-work image grid — swap in real photos when ready */}
-        <div className="mb-8 grid gap-3 sm:grid-cols-3">
-          {[1, 2, 3].map((n) => (
-            <div
-              key={n}
-              className="retro-card flex min-h-40 items-center justify-center text-xs uppercase tracking-[0.12em] text-zinc-500"
-            >
-              Studio photo {n}
-            </div>
-          ))}
-        </div>
+          <div className="studio-grid">
+            {[1, 2, 3].map((n) => (
+              <div key={n} className="studio-photo-placeholder">
+                Studio photo {n}
+              </div>
+            ))}
+          </div>
 
-        <div className="mb-8 h-px bg-zinc-700/70" />
+          <div className="pricing-grid">
+            {packages.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`pricing-card${pkg.featured ? " pricing-card-featured" : ""}`}
+              >
+                {pkg.featured && <span className="badge">Popular</span>}
+                <h3>{pkg.name}</h3>
+                <p className="pricing-desc">{pkg.desc}</p>
+                <p className="pricing-price">—</p>
+                <p className="pricing-note">Price on request</p>
+              </div>
+            ))}
+          </div>
 
-        <h2 className="mb-1 text-xs uppercase tracking-[0.18em] text-zinc-400">Production Pricing</h2>
-        <p className="retro-copy mb-6">Rates are customized by scope, timeline, and revision needs.</p>
-
-        <div className="grid gap-4 md:grid-cols-3">
-          {packages.map((pkg) => (
-            <article key={pkg.name} className="retro-card">
-              <h3 className="text-2xl font-semibold">{pkg.name}</h3>
-              <p className="mt-3 text-sm text-zinc-300">{pkg.desc}</p>
-              <p className="mt-5 text-xs uppercase tracking-[0.13em] text-zinc-400">Price on request</p>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-8">
-          <Link href="/contact" className="retro-btn retro-btn-primary">
-            Request a quote
-          </Link>
+          <p className="pricing-cta">
+            <Link href="/contact" className="btn btn-primary">Request a quote</Link>
+          </p>
         </div>
       </section>
     </main>
