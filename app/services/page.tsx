@@ -39,6 +39,18 @@ export default function ServicesPage() {
             ))}
           </div>
 
+          <div className="production-playlist">
+            <h2 className="production-playlist-title">Production Work</h2>
+            <p className="production-playlist-desc">A selection of tracks produced, mixed, or co-written by Eli Ward.</p>
+            <iframe
+              title="My Production — Spotify Playlist"
+              src="https://open.spotify.com/embed/playlist/5o88KhxRzrcZYJkQksAqVp?utm_source=generator&theme=0"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              style={{ width: "100%", height: 352, border: 0, borderRadius: 8, display: "block" }}
+            />
+          </div>
+
           <div className="pricing-grid">
             {packages.map((pkg) => (
               <div

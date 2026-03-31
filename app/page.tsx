@@ -65,7 +65,7 @@ export default function Home() {
                 >
                   blind audition
                 </a>{" "}
-                earned two chair turns from Gwen Stefani and Niall Horan.
+                earned two chair turns from Gwen Stefani and Reba McEntire.
               </p>
               <p>
                 Since launching with &quot;Catalyst&quot; in 2023, Ward has released singles including &quot;Text When

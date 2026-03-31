@@ -65,24 +65,6 @@ export default function MusicPage() {
               </div>
             </article>
 
-            <article className="music-card">
-              <iframe
-                title="My Production — Spotify Playlist"
-                src="https://open.spotify.com/embed/playlist/5o88KhxRzrcZYJkQksAqVp?utm_source=generator&theme=0"
-                loading="lazy"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                className="music-card-embed"
-                style={{ height: 352 }}
-              />
-              <div className="music-card-body">
-                <h3 className="music-card-title">My Production</h3>
-                <p className="music-card-meta">Playlist · Production work</p>
-                <a className="btn btn-secondary" href="https://open.spotify.com/playlist/5o88KhxRzrcZYJkQksAqVp" target="_blank" rel="noreferrer" style={{ fontSize: "0.8rem", padding: "0.6rem 1.2rem" }}>
-                  Open in Spotify
-                </a>
-              </div>
-            </article>
-
             <article className="music-card" style={{ gridColumn: "1 / -1" }}>
               <div style={{ position: "relative", width: "100%", aspectRatio: "16/9" }}>
                 <iframe
