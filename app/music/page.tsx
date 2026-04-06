@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function MusicPage() {
   return (
     <main>
@@ -87,12 +85,6 @@ export default function MusicPage() {
             </article>
           </div>
 
-          <div className="section-cta" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "var(--space-md)", flexWrap: "wrap" }}>
-            <p style={{ color: "var(--color-text-muted)", margin: 0 }}>
-              Looking for production services?
-            </p>
-            <Link href="/contact" className="btn btn-primary" style={{ width: "auto" }}>Get a quote</Link>
-          </div>
         </div>
       </section>
     </main>
