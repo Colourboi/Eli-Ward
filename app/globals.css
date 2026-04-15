@@ -340,6 +340,44 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; letter-spacing:
   color: var(--color-accent-hover);
 }
 
+.bio-photo-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.bio-burst-wm {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.bio-burst-wm img {
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.bio-photo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  display: block;
+  transition: none;
+}
+
+@media (hover: hover) {
+  .bio-photo:hover {
+    transform: scale(1.04);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+  }
+}
+
 .bio-image-placeholder {
   aspect-ratio: 4/5;
   background: var(--color-border);

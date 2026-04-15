@@ -82,8 +82,41 @@ export default function Home() {
               </p>
             </div>
             <div className="bio-image">
-              <div className="bio-image-placeholder">
-                <span>Photo</span>
+              <div className="bio-photo-wrap">
+                {[
+                  // Top
+                  { top: "-7%",  left: "50%",  rot:   0, size: 56 },
+                  { top: "-3%",  left: "76%",  rot:  25, size: 44 },
+                  { top: "-3%",  left: "24%",  rot: -25, size: 42 },
+                  // Right side (dense)
+                  { top: "6%",   left: "104%", rot:  45, size: 42 },
+                  { top: "20%",  left: "112%", rot:  60, size: 52 },
+                  { top: "35%",  left: "116%", rot:  80, size: 58 },
+                  { top: "50%",  left: "115%", rot:  95, size: 48 },
+                  { top: "65%",  left: "110%", rot: 115, size: 46 },
+                  { top: "78%",  left: "102%", rot: 130, size: 40 },
+                  // Left side
+                  { top: "14%",  left: "-8%",  rot: 300, size: 48 },
+                  { top: "42%",  left: "-16%", rot: 270, size: 52 },
+                  { top: "70%",  left: "-10%", rot: 240, size: 44 },
+                ].map((wm, i) => (
+                  <span
+                    key={i}
+                    aria-hidden="true"
+                    className="bio-burst-wm"
+                    style={{ top: wm.top, left: wm.left, transform: `translate(-50%, -50%) rotate(${wm.rot}deg)` }}
+                  >
+                    <Image src="/logo-ew.png" alt="" width={wm.size} height={wm.size} />
+                  </span>
+                ))}
+                <Image
+                  src="/eli-ward-homepage.jpg"
+                  alt="Eli Ward with guitar"
+                  width={480}
+                  height={600}
+                  className="bio-photo"
+                  sizes="(max-width: 768px) 100vw, 480px"
+                />
               </div>
             </div>
           </div>
